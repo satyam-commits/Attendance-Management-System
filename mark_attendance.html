@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Attendance Management</title>
+    <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>CUAMS</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Manage Students</a></li>
+            <li><a href="#">Mark Attendance</a></li>
+            <li><a href="#">View Attendance</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </aside>
+
+    <section class="main-content">
+        <header>
+            <div class="admin-info">
+                <div style="width: 50%;">
+                <h1>Dashboard</h1></div>
+                <div class="logout" style="width: 50%;">
+                    <div class="admin_logout" style="display: flex;margin-left: 350px;">
+                        <img src="C:\Users\ksaty\OneDrive\Desktop\icon.png" height="30" width="40"><img>
+                        <button>Logout</button>
+                    </div>
+                </div>
+            </div>
+            <h5>Welcome to Chandigarh University Attendance Management System</h5>
+        </header>
+
+        <div class="attendance-container">
+            <h2>Mark Attendance</h2>
+            <form action="#" method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>University ID</th>
+                            <th>Student Name</th>
+                            <th>Group</th>
+                            <th>Section</th>
+                            <th>Present</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>U001</td>
+                            <td class="student-name">John Doe</td>
+                            <td>
+                                <select name="group[]" required>
+                                    <option value="Group A">Group A</option>
+                                    <option value="Group B">Group B</option>
+                                    <option value="Group C">Group C</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="section[]" required>
+                                    <option value="Section 1">Section 1</option>
+                                    <option value="Section 2">Section 2</option>
+                                    <option value="Section 3">Section 3</option>
+                                </select>
+                            </td>
+                            <td><input type="checkbox" name="attendance[]" value="John Doe"></td>
+                        </tr>
+                        <tr>
+                            <td>U002</td>
+                            <td class="student-name">Jane Smith</td>
+                            <td>
+                                <select name="group[]" required>
+                                    <option value="Group A">Group A</option>
+                                    <option value="Group B">Group B</option>
+                                    <option value="Group C">Group C</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="section[]" required>
+                                    <option value="Section 1">Section 1</option>
+                                    <option value="Section 2">Section 2</option>
+                                    <option value="Section 3">Section 3</option>
+                                </select>
+                            </td>
+                            <td><input type="checkbox" name="attendance[]" value="Jane Smith"></td>
+                        </tr>
+                        <tr>
+                            <td>U003</td>
+                            <td class="student-name">Michael Brown</td>
+                            <td>
+                                <select name="group[]" required>
+                                    <option value="Group A">Group A</option>
+                                    <option value="Group B">Group B</option>
+                                    <option value="Group C">Group C</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="section[]" required>
+                                    <option value="Section 1">Section 1</option>
+                                    <option value="Section 2">Section 2</option>
+                                    <option value="Section 3">Section 3</option>
+                                </select>
+                            </td>
+                            <td><input type="checkbox" name="attendance[]" value="Michael Brown"></td>
+                        </tr>
+                        <tr>
+                            <td>U004</td>
+                            <td class="student-name">Emily Johnson</td>
+                            <td>
+                                <select name="group[]" required>
+                                    <option value="Group A">Group A</option>
+                                    <option value="Group B">Group B</option>
+                                    <option value="Group C">Group C</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="section[]" required>
+                                    <option value="Section 1">Section 1</option>
+                                    <option value="Section 2">Section 2</option>
+                                    <option value="Section 3">Section 3</option>
+                                </select>
+                            </td>
+                            <td><input type="checkbox" name="attendance[]" value="Emily Johnson"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit" class="submit-btn">Submit Attendance</button>
+            </form>
+        </div>
+
+</body>
+</html>
